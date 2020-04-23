@@ -34,7 +34,6 @@ class CashRegister
     binding.pry
     @quantity.times{@items.pop}
     @total = @total-(@price*quantity)
-    binding.pry
   end
 
 end
