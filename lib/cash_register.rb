@@ -36,7 +36,7 @@ class CashRegister
       @items.pop
       @total = @total-@price
     else 
-      @total = 0
+      @total == 0
     end
     @total
   end
