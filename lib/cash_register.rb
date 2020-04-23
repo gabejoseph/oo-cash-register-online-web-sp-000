@@ -35,8 +35,9 @@ class CashRegister
     if @items = []
       @total = 0
       binding.pry 
-    end
+    else
       @total = @total-@price 
+    end
   end
 
 end
