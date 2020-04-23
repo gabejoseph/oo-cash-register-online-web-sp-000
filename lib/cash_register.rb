@@ -34,10 +34,11 @@ class CashRegister
     #only going to check price, reverse of add_item
     if @items.size > 0 
       @items.pop
-      @total = @total-@price 
+      @total = @total-@price
     else 
       @total = 0
     end
+    @total
   end
 
 end
