@@ -32,7 +32,6 @@ class CashRegister
   
   def void_last_transaction
     quantity.times{@items.pop}
-    binding.pry
     if @items.size > 0 
       @total = @total-(@price*quantity)
     else 
