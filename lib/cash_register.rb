@@ -31,6 +31,7 @@ class CashRegister
   
   def void_last_transaction
     #only going to check price, reverse of add_item
+    
     binding.pry
   end
 
