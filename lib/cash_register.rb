@@ -33,12 +33,12 @@ class CashRegister
   def void_last_transaction
     binding.pry
     #only going to check price, reverse of add_item
-    # if @items.size > 0 
-    #   @items.pop
-    #   @total = @total-@price
-    # else 
-    #   @total == 0
-    # end
+    if @items.size > 0 
+      @items.pop
+      @total = @total-@price
+    else 
+      @total == 0
+    end
   end
 
 end
