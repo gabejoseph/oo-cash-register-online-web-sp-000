@@ -29,7 +29,7 @@ class CashRegister
   
   def void_last_transaction(quantity)
     #only going to check price, reverse of add_item
-    
+    quantity
   end
 
 end
