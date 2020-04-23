@@ -33,7 +33,11 @@ class CashRegister
   def void_last_transaction
     # binding.pry
     @quantity.times{@items.pop}
-    @total = @total-(@price*@quantity)
+    if @items = []
+      @total = @total-(@price*@quantity)
+    else 
+      @total = 0 
+    end
   end
 
 end
