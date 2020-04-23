@@ -32,8 +32,7 @@ class CashRegister
   
   def void_last_transaction
     #only going to check price, reverse of add_item
-    banana = @total-(@price*@quantity)
-    banana
+    binding.pry
   end
 
 end
