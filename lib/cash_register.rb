@@ -32,7 +32,7 @@ class CashRegister
   
   def void_last_transaction
     #only going to check price, reverse of add_item
-    if @items.length = 0
+    if @items.size = 0
       @total = 0 
     else 
       @total = @total-@price 
