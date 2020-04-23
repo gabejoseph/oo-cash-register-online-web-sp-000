@@ -11,9 +11,6 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 0)
-    add_item(title, price, quantity = 0).each do |x, y, z|
-      @@item << x
-    end
     if quantity > 0
       @total += price*quantity
     else 
