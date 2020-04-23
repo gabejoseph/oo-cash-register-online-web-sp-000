@@ -34,7 +34,6 @@ class CashRegister
     #only going to check price, reverse of add_item
     if @items = []
       @total = 0
-      binding.pry 
     else
       @total = @total-@price 
     end
