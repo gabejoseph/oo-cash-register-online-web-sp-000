@@ -12,6 +12,7 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
+    @quantity = quantity
     @total += price*quantity
     quantity.times { @items << title }
   end
@@ -27,9 +28,9 @@ class CashRegister
     end
   end
   
-  def void_last_transaction(quantity)
-    #only going to check price, reverse of add_item
-    quantity
-  end
+  # def void_last_transaction(quantity)
+  #   #only going to check price, reverse of add_item
+
+  # end
 
 end
